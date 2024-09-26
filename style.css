@@ -9,11 +9,14 @@ body {
   background: linear-gradient(to bottom, #6dd5ed, #ffffff);
   font-family: "Arial", sans-serif;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   height: 100vh;
+  margin: 0;
 }
 
+/* Weather App Container */
 .container {
   width: 350px;
   background-color: #fff;
@@ -21,90 +24,24 @@ body {
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
+  margin-bottom: 20px; /* Space for footer */
 }
 
-/* Header */
-.weather-app h1 {
-  font-size: 28px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* Search Box Styling */
-.search-box {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-#city-input {
-  width: 200px;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-#search-btn {
-  padding: 10px;
-  font-size: 16px;
-  background-color: #ff8c00;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-#search-btn:hover {
-  background-color: #e07b00;
-}
-
-/* Weather Details */
-.weather-details {
-  margin-top: 20px;
-}
-
-.temperature {
-  font-size: 48px;
-  color: #333;
-  margin: 10px 0;
-}
-
-.icon img {
-  width: 80px;
-}
-
-.extra-details {
-  margin-top: 20px;
-  font-size: 16px;
-}
-
-.extra-details div {
-  margin: 5px 0;
-}
-
-/* Time Info */
-.time-info {
-  margin-top: 20px;
-  font-size: 14px;
-  color: #555;
-}
-
-/* Add some shadow effect for 3D appearance */
-.container {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-
-.container:hover {
-  transform: scale(1.05);
-}
+/* Footer Styling */
 footer {
-  border-top: 1px solid #f9f7fe;
-  padding: 30px 0 0 0;
+  width: 100%;
   text-align: center;
+  padding: 10px 0;
+  background-color: #f0f0f0;
+  color: #333;
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.6);
+}
+
+footer a {
+  color: #ff8c00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
