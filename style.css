@@ -9,14 +9,12 @@ body {
   background: linear-gradient(to bottom, #6dd5ed, #ffffff);
   font-family: "Arial", sans-serif;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
+  min-height: 100vh;
+  flex-direction: column; /* Ensures the footer stacks right below */
 }
 
-/* Weather App Container */
 .container {
   width: 350px;
   background-color: #fff;
@@ -24,17 +22,18 @@ body {
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-bottom: 20px; /* Space for footer */
+  margin-bottom: 20px; /* Adds a small gap before the footer */
 }
 
 /* Footer Styling */
 footer {
-  width: 100%;
   text-align: center;
   padding: 10px 0;
   background-color: #f0f0f0;
   color: #333;
   font-size: 14px;
+  width: 100%; /* Ensures it stretches full width */
+  border-radius: 10px; /* Rounded footer for a better look */
 }
 
 footer a {
