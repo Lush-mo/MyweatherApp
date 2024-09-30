@@ -7,38 +7,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="weather-app">
-        <h1>Weather App</h1>
-        <div class="search-box">
-          <input
-            type="text"
-            id="city-input"
-            placeholder="Enter a city"
-            autofocus
-          />
-          <button id="search-btn">Submit</button>
-        </div>
-
-        <div class="weather-details">
-          <div class="city" id="city"></div>
-          <div class="temperature"><span id="temp"></span>°C</div>
-          <div class="description" id="description"></div>
-          <div class="icon">
-            <img id="icon" alt="weather-icon" />
-          </div>
-          <div class="extra-details">
-            <div class="humidity">Humidity: <span id="humidity"></span>%</div>
-            <div class="wind">Wind: <span id="wind"></span> km/h</div>
-          </div>
-        </div>
-
-        <div class="time-info">
-          <p id="time"></p>
-          <p id="date"></p>
-        </div>
+    <header>
+      <form>
+        <input type="search" placeholder="Enter a city" required />
+        <input type="submit" value="Search" />
+      </form>
+    </header>
+    <main>
+      <div>
+        <h1>Lusaka</h1>
+        <p>
+          Monday 14:01, Scattered clouds
+          <br />
+          Humidity: 40% Wind: 2km/h
+        </p>
       </div>
-    </div>
+      <div>☀ 30°C</div>
+    </main>
     <footer>
       Coded by
       <a href="https://github.com/Lush-mo" target="_blank"
