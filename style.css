@@ -1,46 +1,11 @@
-/* Global Styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  background: linear-gradient(to bottom, #6dd5ed, #ffffff);
-  font-family: "Arial", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  flex-direction: column; /* Ensures the footer stacks right below */
+  background-color: #f9f7fe;
 }
-
-.container {
-  width: 350px;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  margin-bottom: 20px; /* Adds a small gap before the footer */
-}
-
-/* Footer Styling */
-footer {
-  text-align: center;
-  padding: 10px 0;
-  background-color: #f0f0f0;
-  color: #333;
-  font-size: 14px;
-  width: 50%; /* Ensures it stretches full width */
-  border-radius: 10px; /* Rounded footer for a better look */
-}
-
-footer a {
-  color: #ff8c00;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
+.first {
+  background-color: white;
+  max-width: 600px;
+  margin: 45px auto;
+  padding: 30px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 16px;
 }
